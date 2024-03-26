@@ -85,7 +85,7 @@ h3 {
     width: 80%;
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 148px;
     margin: 60px auto;
 
 }
@@ -232,7 +232,7 @@ main{
     border-bottom: 2px solid #7878784b;
 }
 .section9 .mat4 p:nth-last-child(2){
-    margin-left: 200px;
+    margin-left: 190px;
 }
 .section9 .mat5 {
     display: flex;
@@ -572,34 +572,41 @@ main {
     .all-div {
         width: 70%;
         margin: auto;
-        padding: 50px 0;
+        padding: 30px 0;
     
     }
     
     .section8 {
         display: flex;
+        flex-direction: column;
         gap: 15px; 
         
     
     }
     .div1 input {
-        width: 180px;
-        padding: 16px 15px;
+        width: 200px;
+        padding: 13px 12px;
         border: 1px solid #78787856;
         border-radius:3px;
+        font-size: 10px;
     }
     .div2 select{
-        width: 160px;
-        padding: 16px 15px;
+        width: 200px;
+        padding: 13px 12px;
         border: 1px solid #78787856;
         border-radius:3px;
         color: #787878;
+        display: flex;
+        flex-direction: column;
+        font-size: 10px;
     }
     .div2 button {
         background-color: #0054A9;
         border: none;
-        padding: 17px 30px;
+        padding: 12px 18px;
         border-radius: 4px;
+        margin-top: 10px;
+        
     }
     
     .section9 a {
@@ -614,6 +621,9 @@ main {
         border-bottom: 2px solid #7878784b;
         margin-top: 40px;
     
+    }
+    .section9 .mat1, .mat2, .mat3, .mat4, .mat5 p {
+        font-size: 12px;
     }
     .section9 .mat2 {
         display: flex;
@@ -641,7 +651,7 @@ main {
         border-bottom: 2px solid #7878784b;
     }
     .section9 .mat4 p:nth-last-child(2){
-        margin-left: 200px;
+        margin-left: 190px;
     }
     .section9 .mat5 {
         display: flex;
@@ -665,8 +675,8 @@ main {
         color: white;
     }
     .pupu p{
-        padding-bottom: 28px;
-        font-size: 14px;
+       
+        font-size: 13px;
     }
     .pupu h2 {
         font-size: 17px;
@@ -683,7 +693,7 @@ main {
         width: 80%;
         display: flex;
         justify-content: space-between;
-        gap: 60px;
+        gap: 80px;
         margin: 60px auto;
     
     }
@@ -691,42 +701,57 @@ main {
         height: 25vh;
         margin: auto;
     }
+
+    .sub2 p {
+        font-size: 13px;
+    }
+    .sub2 h3 {
+        font-size: 15px;
+    }
     .section3 {
         width: 68%;
         display: flex;
-        gap: 140px;
+        gap: 125px;
         margin: 60px auto;
     }
     .section3 p {
         width: 500px;
+        font-size: 13px;
     }
     
     h4{
         white-space: nowrap;
         margin-top: 10px;
+        font-size: 14px;
     }
     .section4 {
         width: 68%;
         display: flex;
-        gap: 78px;
+        gap: 60px;
         margin: 60px auto;
     }
-    .section p {
+    .section4 p {
         width: 500px;
-        
+        font-size: 13px; 
     }
     .section5 {
         width: 68%;
         display: flex;
-        gap: 88px;
+        gap: 65px;
         margin: 60px auto;
+    }
+    .section5 p {
+        font-size: 13px;
     }
     
     .section6 {
         width: 68%;
         display: flex;
-        gap: 70px;
+        gap: 40px;
         margin: 60px auto;
+    }
+    .section6 p {
+        font-size: 13px;
     }
      .section3 h4::before{
         content: url(image.co/Group\ \(10\).png);
@@ -750,7 +775,270 @@ main {
         text-align: center;
         color: #0054A9;
         font-weight: 800;
-        font-size: 21px;
+        font-size: 18px;
     }
     
-}    
+}  
+
+@media (max-width: 570px){
+    .flogo {
+        width: 126px;
+        height: 16px;
+        margin-left: 50px;
+        margin-top: 0;
+    }
+    .fnavbar-links{
+        display: flex;
+    
+        margin-right: 30px;
+    }
+    .fnavbar-links ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    
+    }
+    .toggle-button {
+        display: flex;
+    }
+    .navbar-links {
+    display: none; 
+    width: 100%;   
+    
+    }
+    .navbar nav {
+    flex-direction: column;
+    align-items: flex-start;
+    }  
+    .navbar .navbar-links ul {
+    flex-direction: column;
+    width:100%;
+    }
+    .navbar nav .navbar-links li {
+    text-align: center;
+    }
+    .navbar-links.active{
+    display: flex;
+    }
+    .media {
+        margin-left: 30px;
+        white-space: nowrap;
+    }
+    .section1 {
+        width: 100%;
+        height: 50vh;
+        background-image: linear-gradient(blue, rgb(97, 159, 241)); 
+    }
+    h3 {
+        color: #0054A9;
+    }
+    .pupu {
+        width: 62%;
+        margin: 10px auto;
+        padding-top: 30px;
+        justify-content: center;
+        text-align: center;
+        color: white;
+    }
+    .pupu p{
+        padding-bottom: 28px;
+        font-size: 11px;
+    }
+    .pupu h2 {
+        font-size: 15px;
+    }
+    .section1 .pupu a {
+        text-decoration: none;
+        background-color: white;
+        border-radius: 4px;
+        border: none;
+        padding: 12px 22px;
+        font-size: 10px;
+    }
+    .section2 {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 80px;
+        margin: 60px auto;
+    
+    }
+    .section2 img {
+        height: 25vh;
+        margin: auto;
+    }
+
+    .sub2 p {
+        font-size: 12px;
+    }
+    .sub2 h3 {
+        font-size: 14px;
+        text-align: center;
+    }
+    .section3 {
+        width: 68%;
+        display: flex;
+        gap: 10px;
+        margin: 60px auto;
+    }
+    .section3 p {
+        width: 500px;
+        font-size: 10px;
+    }
+    
+    h4{
+        white-space: nowrap;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .section4 {
+        width: 68%;
+        display: flex;
+        gap: 10px;
+        margin: 60px auto;
+    }
+    .section4 p {
+        width: 500px;
+        font-size: 10px; 
+    }
+    .section5 {
+        width: 68%;
+        display: flex;
+        gap: 10px;
+        margin: 60px auto;
+    }
+    .section5 p {
+        font-size: 10px;
+    }
+    
+    .section6 {
+        width: 68%;
+        display: flex;
+        gap: 10px;
+        margin: 60px auto;
+    }
+    .section6 p {
+        font-size: 10px;
+    }
+     .section3 h4::before{
+        content: url(image.co/Group\ \(10\).png);
+        margin-right: 8px;
+        size-adjust: 4px;
+    
+     }
+     .section4 h4::before{
+        content: url(image.co/Group\ \(10\).png);
+        margin-right: 8px;
+     }
+     .section5 h4::before{
+        content: url(image.co/Group\ \(10\).png);
+        margin-right: 8px;
+     }
+     .section6 h4::before{
+        content: url(image.co/Group\ \(10\).png);
+        margin-right: 8px;
+     }
+    .section7 {
+        text-align: center;
+        color: #0054A9;
+        font-weight: 800;
+        font-size: 12px;
+  }
+  .all-div {
+    width: 70%;
+    margin: auto;
+    padding: 50px 0;
+
+}
+
+.section8 {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    
+
+}
+.div1 input {
+    width: 170px;
+    padding: 12px 11px;
+    border: 1px solid #78787856;
+    border-radius:3px;
+    margin: auto;
+}
+.div2 select{
+    width: 170px;
+    padding: 8px 11px;
+    border: 1px solid #78787856;
+    border-radius:3px;
+    color: #787878;
+    display: flex;
+    flex-direction: column;
+    
+}
+.div2 button {
+    background-color: #0054A9;
+    border: none;
+    padding: 8px 11px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 10px;
+    
+}
+
+.section9 a {
+    text-decoration: none;
+    color: #787878;
+}
+.section9 .mat1 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-top: 2px solid #7878784b;
+    border-bottom: 2px solid #7878784b;
+    margin-top: 40px;
+
+}
+.section9 .mat1, .mat2, .mat3, .mat4, .mat5 p {
+    font-size: 10px;
+}
+.section9 .mat2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid #7878784b;
+}
+.section9 .mat2 p:nth-last-child(2){
+    margin-left: 20px;
+}
+
+.section9 .mat3 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid #7878784b;
+}
+.section9 .mat3 p:nth-last-child(2){
+    margin-left: 18px;
+}
+.section9 .mat4 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: 2px solid #7878784b;
+}
+.section9 .mat4 p:nth-last-child(2){
+    margin-left: 15px;
+}
+.section9 .mat5 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 0;
+}
+}
