@@ -9,27 +9,31 @@
                 
 </head>
 <body>
-        <nav>
-            <div class="navbar">
-                
-                    <div class="logo">
-                        <img src="image/Group 645.jpg" alt="logo">
-                    </div>
-                    <div class="navbar-links">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="usecase.html">Use case</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="product.html">Product</a></li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="training.html">Training</a></li>
-                            <li><a href="career.html">Career</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="contact.html">Contact</a></li>  
-                        </ul>
-                    </div>
+    <div class="navbar">
+        <nav> 
+            <div class="logo">
+                <img src="image/Group 645.jpg" alt="logo">
             </div>
-        </nav>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span> 
+                <span class="bar"></span> 
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="usecase.html">Use case</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="training.html">Training</a></li>
+                    <li><a href="career.html">Career</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>  
+                </ul>
+            </div>
+        </nav>     
+    </div>
 
         <div class="section1">
             <h3>Data pipeline infrastructure & deploy machine </h3>
@@ -132,13 +136,22 @@
                         <img src="image1/Vector (4).png" alt="likedin">
                         </li> 
                     </ul>                    
-                    </div>           
+                </div>           
             </div>
     
             <hr>
     
             <p class="copywrite">© 2021 Mavencode. All Rights Reserved</p>
-        </footer>
+</footer>
+
+        <script>
+            const toggleButton = document.getElementsByClassName('toggle-button')[0]
+            const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+        
+            toggleButton.addEventListener('click', () =>{
+                navbarLinks.classList.toggle('active')
+            })
+        </script>
         
 </body>
 </html>

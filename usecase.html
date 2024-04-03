@@ -7,28 +7,40 @@
             <title>Use case</title>
             <link rel="stylesheet" href="usecase.css">
         </head>
+
         <body>
+
             <header>
-                <nav>
-                    <div class="navbar">
-                            <div class="logo">
-                                <img src="image/Group 645.jpg" alt="logo">
-                            </div>
-                            <div class="navbar-links">
-                                <ul>
-                                    <li><a href="index.html">Home</a></li>
-                                    <li><a href="usecase.html">Use case</a></li>
-                                    <li><a href="services.html">Services</a></li>
-                                    <li><a href="product.html">Product</a></li>
-                                    <li><a href="blog.html">Blog</a></li>
-                                    <li><a href="training.html">Training</a></li>
-                                    <li><a href="career.html">Career</a></li>
-                                    <li><a href="about.html">About Us</a></li>
-                                    <li><a href="contact.html">Contact</a></li>  
-                                </ul>
-                            </div>
-                    </div>
-                </nav>
+                
+                <div class="navbar">
+                
+                    <nav>
+                        <div class="logo">
+                            <img src="image/Group 645.jpg" alt="logo">
+                        </div>
+            
+                        <a href="#" class="toggle-button">
+                            <span class="bar"></span> 
+                            <span class="bar"></span> 
+                            <span class="bar"></span>
+                        </a>
+            
+                        <div class="navbar-links">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="usecase.html">Use case</a></li>
+                                <li><a href="services.html">Services</a></li>
+                                <li><a href="product.html">Product</a></li>
+                                <li><a href="blog.html">Blog</a></li>
+                                <li><a href="training.html">Training</a></li>
+                                <li><a href="career.html">Career</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="contact.html">Contact</a></li>  
+                            </ul>
+                        </div>
+                    </nav>    
+                </div>
+            
                 
             <div class="section1">
                 <h2>How MavenCode’s experience and <br>tools can be applied to solve real world <br> AI & ML</h2>
@@ -178,37 +190,46 @@
             </div>
                     
 
-                <footer>
+            <footer>
 
-                    <div class="foot-navbar">
+                <div class="foot-navbar">
+                
                     
-                        
-                            <img class="flogo" src="image/Group 645.jpg" alt="logo">
-                        
-                        <div class="fnavbar-links">
-                            <ul>
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="usecase.html">Use case</a></li>
-                                <li><a href="services.html">Services</a></li>
-                                <li><a href="product.html">Product</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="training.html">Training</a></li>
-                                <li><a href="career.html">Career</a></li>
-                                <li><a href="about.html">About Us</a></li>
-                                <li><a href="contact.html">Contact</a></li> 
-                                <li class="media">
-                                 <img src="image1/Group 3.png" alt="instagram">
-                                <img src="image1/Vector (3).png" alt="tweeter">
-                                <img src="image1/Vector (4).png" alt="likedin">
-                                </li> 
-                            </ul>                    
-                            </div>           
-                    </div>
-            
-                    <hr>
-            
-                    <p class="copywrite">© 2021 Mavencode. All Rights Reserved</p>
-                </footer>
-
+                        <img class="flogo" src="image/Group 645.jpg" alt="logo">
+                    
+                    <div class="fnavbar-links">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="usecase.html">Use case</a></li>
+                            <li><a href="services.html">Services</a></li>
+                            <li><a href="product.html">Product</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="training.html">Training</a></li>
+                            <li><a href="career.html">Career</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="contact.html">Contact</a></li> 
+                            <li class="media">
+                             <img src="image1/Group 3.png" alt="instagram">
+                            <img src="image1/Vector (3).png" alt="tweeter">
+                            <img src="image1/Vector (4).png" alt="likedin">
+                            </li> 
+                        </ul>                    
+                        </div>           
+                </div>
+        
+                <hr>
+        
+                <p class="copywrite">© 2021 Mavencode. All Rights Reserved</p>
+            </footer>
+          
+            <script>
+                const toggleButton = document.getElementsByClassName('toggle-button')[0]
+                const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+        
+                toggleButton.addEventListener('click', () =>{
+                    navbarLinks.classList.toggle('active')
+                })
+            </script>
+        
         </body>
         </html>
